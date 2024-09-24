@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bannerBg: "#115061",
+      },
+      fontFamily: {
+        bodyfont: ["Poppins", "sans-serif"],
       },
     },
   },
