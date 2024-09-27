@@ -9,7 +9,7 @@ import Ginger from "@/components/Ginger";
 import Honey from "@/components/Honey";
 import Nuts from "@/components/Nuts";
 import Oils from "@/components/Oil";
-import PicySection from "@/components/picySection";
+import PicySection from "@/components/PicySection";
 import ShopCategory from "@/components/ShopCategory";
 
 const HomePage = () => {
