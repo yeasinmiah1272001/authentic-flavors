@@ -3,15 +3,16 @@ import Container from "./Container";
 import Image from "next/image";
 import { logo } from "@/asset";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
+import Link from "next/link";
 
 const TopNav = () => {
   return (
     <div className=" py-4 shadow-lg">
       <Container className={"flex items-center justify-between"}>
         {/* left */}
-        <div>
+        <Link href={"/"}>
           <Image src={logo} alt="logo" />
-        </div>
+        </Link>
         {/* middle*/}
         <div className="flex-1 px-20 md:block hidden">
           <input

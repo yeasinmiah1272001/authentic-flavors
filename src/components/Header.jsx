@@ -6,7 +6,7 @@ const Header = () => {
   const nav = [
     { title: "Home", href: "/" },
     { title: "Ginger", href: "ginger" },
-    { title: "Cinnamon", href: "cinnamon" },
+    { title: "Cinnamon", href: "cinamon" },
     { title: "Dry Fruits", href: "dry" },
     { title: "Honey", href: "honey" },
     { title: "Nuts", href: "nuts" },

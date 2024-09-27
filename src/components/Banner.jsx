@@ -10,7 +10,6 @@ import { banner4 } from "@/asset";
 import { banner6 } from "@/asset";
 import { banner7 } from "@/asset";
 import { banner8 } from "@/asset";
-import { banner2 } from "@/asset";
 
 // PrevArrow component should receive onClick as a prop
 const PrevArrow = ({ onClick }) => (
@@ -50,7 +49,7 @@ const Banner = () => {
       <Slider {...settings}>
         {[banner1, banner5, banner4, banner6, banner7, banner8].map(
           (image, index) => (
-            <div key={index} className="relative">
+            <div key={index}>
               <div className="relative w-full h-[470px]">
                 <Image
                   src={image}
@@ -63,6 +62,7 @@ const Banner = () => {
           )
         )}
       </Slider>
+      {/* SVG placed right after the slider */}
     </div>
   );
 };
