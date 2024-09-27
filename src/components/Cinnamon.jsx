@@ -1,6 +1,7 @@
 import { getData } from "@/helper";
 import Container from "./Container";
 import Card from "./Card";
+
 const Cinnamon = async () => {
   const endPoint = "https://shoppingapi.vercel.app/allspicy";
   const allData = await getData(endPoint);
