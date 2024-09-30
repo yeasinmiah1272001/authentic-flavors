@@ -5,7 +5,6 @@ import { useDispatch } from "react-redux";
 
 const AddToCartBtn = ({ item }) => {
   const dispatch = useDispatch();
-  console.log("item", dispatch);
   const handleAddToCartbtn = () => {
     if (item) {
       dispatch(addToCart(item));

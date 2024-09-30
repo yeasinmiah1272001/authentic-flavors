@@ -4,6 +4,7 @@ import Image from "next/image";
 import { logo } from "@/asset";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 import Link from "next/link";
+import SearchInput from "./SearchInput";
 
 const TopNav = () => {
   return (
@@ -14,13 +15,7 @@ const TopNav = () => {
           <Image src={logo} alt="logo" />
         </Link>
         {/* middle*/}
-        <div className="flex-1 px-20 md:block hidden">
-          <input
-            className="bg-white w-full px-4 p-2 outline-none rounded-full border-2 border-yellow-400 hover:border-cyan-400 duration-300"
-            type="text"
-            placeholder="Type here"
-          />
-        </div>
+        <SearchInput />
         {/* right */}
         <div className="flex items-center gap-6 relative">
           {/* <div className="relative">

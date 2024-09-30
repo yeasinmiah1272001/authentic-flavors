@@ -56,7 +56,7 @@ const Card = ({ item }) => {
       </div>
 
       <div className="p-4">
-        <h1 className="text-lg font-bold text-gray-800">Title: {item.title}</h1>
+        <h3 className="font-bold text-lg">{item.title}</h3>
         <h2 className="text-sm text-gray-600">Category: {item.category}</h2>
         <p className="text-md text-gray-900 font-semibold mt-1">
           Price: ${item.price}

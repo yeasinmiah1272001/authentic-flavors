@@ -12,6 +12,7 @@ import Offer from "@/components/Offer";
 import Oils from "@/components/Oil";
 import PicySection from "@/components/PicySection";
 import ShopCategory from "@/components/ShopCategory";
+import Tasty from "@/components/Tasty";
 
 const HomePage = () => {
   return (
@@ -26,6 +27,7 @@ const HomePage = () => {
       <Honey />
       <Nuts />
       <Oils />
+      <Tasty />
       <PicySection />
       <FressSection />
       <Explore />

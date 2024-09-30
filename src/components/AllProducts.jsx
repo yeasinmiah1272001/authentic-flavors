@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 import AddToCartBtn from "./AddToCartBtn";
 import ViewDetails from "./ViewDetails";
 import Image from "next/image";
+import ModalImg from "./ModalImg";
 
 const AllProducts = async () => {
   const endPoint = "https://shoppingapi.vercel.app/allspicy";
@@ -55,15 +56,7 @@ const AllProducts = async () => {
                       </div>
 
                       <p className="py-4">{item.description}</p>
-                      <div>
-                        <img
-                          className="h-32 w-48 rounded-full mx-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
-                          src={item.imageUrl}
-                          alt={item.title}
-                          width={400}
-                          height={400}
-                        />
-                      </div>
+                      <ModalImg item={item} />
                       <div className="p-4">
                         <h1 className="text-lg font-bold text-gray-800">
                           Title: {item.title}

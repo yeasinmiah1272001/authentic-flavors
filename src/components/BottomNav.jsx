@@ -19,7 +19,6 @@ const BottomNav = () => {
   ];
 
   const selector = useSelector((state) => state.spicy.cart);
-  console.log("state", selector);
 
   return (
     <div className="bg-[#323151] text-white py-2.5">
