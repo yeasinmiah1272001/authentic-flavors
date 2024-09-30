@@ -50,16 +50,14 @@ const SearchInput = () => {
         <div className="absolute z-10 w-1/2 bg-white shadow-lg rounded-md mt-2 max-h-60 overflow-auto">
           {filterData.map((item) => (
             <Link
+              key={item.id}
               onClick={() => setSearch("")}
               href={{
                 pathname: `/singlepage/${item.id}`,
                 query: { id: item.id },
               }}
             >
-              <div
-                key={item.title}
-                className="p-2 hover:bg-gray-100 cursor-pointer flex items-center space-x-5 transition duration-200"
-              >
+              <div className="p-2 hover:bg-gray-100 cursor-pointer flex items-center space-x-5 transition duration-200">
                 <Image
                   className="w-14 h-14 rounded-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
                   src={item.imageUrl}
