@@ -13,6 +13,14 @@ import category4 from "../asset/category/honey1.jpg";
 import category5 from "../asset/category/mosla1.jpg";
 import category6 from "../asset/category/oil.jpg";
 
+// import offer1 from "../asset/offer/2.png";
+
+// import offer2 from "../asset/offer/2.jpg";
+
+import offer3 from "../asset/offer/honey.jpg";
+
+// import offer4 from "../asset/offer/img3.jpg";
+
 export {
   logo,
   banner1,
@@ -27,4 +35,8 @@ export {
   category4,
   category5,
   category6,
+  // offer1,
+  // offer2,
+  offer3,
+  // offer4,
 };

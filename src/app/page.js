@@ -8,6 +8,7 @@ import Ginger from "@/components/Ginger";
 
 import Honey from "@/components/Honey";
 import Nuts from "@/components/Nuts";
+import Offer from "@/components/Offer";
 import Oils from "@/components/Oil";
 import PicySection from "@/components/PicySection";
 import ShopCategory from "@/components/ShopCategory";
@@ -17,6 +18,7 @@ const HomePage = () => {
     <div>
       <Banner />
       <ShopCategory />
+      <Offer />
       <AllProducts />
       <Ginger />
       <Cinnamon />

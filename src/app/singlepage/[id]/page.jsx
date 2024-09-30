@@ -1,3 +1,5 @@
+"use client";
+import SingleProduct from "@/components/SingleProduct";
 import { getData } from "@/helper";
 
 const SinglePage = async ({ params }) => {
@@ -8,9 +10,11 @@ const SinglePage = async ({ params }) => {
 
   const singleData = allData.find((item) => item.id === id);
 
-  console.log("data", singleData);
-
-  return <div>SinglePage</div>;
+  return (
+    <div>
+      <SingleProduct item={singleData} />
+    </div>
+  );
 };
 
 export default SinglePage;
