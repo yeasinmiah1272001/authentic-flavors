@@ -4,6 +4,7 @@ import Container from "./Container";
 import Marquee from "react-fast-marquee";
 import AddToCartBtn from "./AddToCartBtn";
 import ViewDetails from "./ViewDetails";
+import Image from "next/image";
 
 const AllProducts = async () => {
   const endPoint = "https://shoppingapi.vercel.app/allspicy";
@@ -25,7 +26,7 @@ const AllProducts = async () => {
                 className="border border-gray-300 rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out p-4"
               >
                 <div className="overflow-hidden rounded-lg mb-4">
-                  <img
+                  <Image
                     onClick={() =>
                       document.getElementById(`modal_${item.id}`).showModal()
                     }
@@ -73,7 +74,7 @@ const AllProducts = async () => {
                         <p className="text-md text-gray-900 font-semibold mt-1">
                           Price: ${item.price}
                         </p>
-                        <AddToCartBtn />
+                        <AddToCartBtn item={item} />
                       </div>
                     </div>
                   </dialog>

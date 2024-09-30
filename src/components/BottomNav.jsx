@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import Container from "./Container";
 import Link from "next/link";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import CartPage from "@/app/cart/page";
 import FavouritePage from "@/app/favourite/page";
+import { useSelector } from "react-redux";
 
 const BottomNav = () => {
   const nav = [
@@ -15,6 +17,10 @@ const BottomNav = () => {
     { title: "Nuts", href: "nuts" },
     { title: "Oils", href: "oils" },
   ];
+
+  const selector = useSelector((state) => state.spicy.cart);
+  console.log("state", selector);
+
   return (
     <div className="bg-[#323151] text-white py-2.5">
       <Container className={"flex justify-between items-center"}>
@@ -57,7 +63,7 @@ const BottomNav = () => {
                     <FaShoppingCart className="text-2xl cursor-pointer" />
 
                     <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
-                      0
+                      {selector.length > 0 ? selector.length : "0"}
                     </span>
                   </div>
                   <div className="relative">

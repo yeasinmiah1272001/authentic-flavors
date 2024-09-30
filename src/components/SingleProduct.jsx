@@ -1,6 +1,7 @@
 "use client";
 
 import { FaStar } from "react-icons/fa";
+import AddToCartBtn from "./AddToCartBtn";
 
 const SingleProduct = ({ item }) => {
   // Function to render stars based on the rating
@@ -43,9 +44,7 @@ const SingleProduct = ({ item }) => {
             {renderStars(item.rating)}
             <span className="text-gray-600">{item.rating} / 5</span>
           </div>
-          <button className="px-4 py-2 mt-4 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-500 transition duration-300">
-            Add to Cart
-          </button>
+          <AddToCartBtn item={item} />
         </div>
       </div>
     </div>

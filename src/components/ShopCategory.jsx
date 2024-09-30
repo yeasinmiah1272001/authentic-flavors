@@ -32,10 +32,10 @@ const ShopCategory = () => {
       </div>
 
       {/* Category Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mx-auto duration-300">
         {/* Category Card */}
         <div
-          className="bg-[#E7E5E5] p-4 rounded-lg flex flex-col items-center justify-center hover:shadow-xl hover:bg-[#f5f5f5] transition duration-300 ease-in-out"
+          className="bg-[#E7E5E5] p-4 rounded-lg flex flex-col items-center justify-center hover:shadow-xl hover:bg-[#f5f5f5] transition duration-500 ease-in-out"
           data-aos="fade-up"
         >
           <div className="w-24 h-24 mb-4">

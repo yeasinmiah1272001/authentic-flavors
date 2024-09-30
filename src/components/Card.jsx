@@ -1,12 +1,14 @@
 "use client";
+import Image from "next/image";
 import AddToCartBtn from "./AddToCartBtn";
+import ModalImg from "./ModalImg";
 import ViewDetails from "./ViewDetails";
 
 const Card = ({ item }) => {
   return (
     <div className="border border-gray-300 rounded-lg shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
       <div className="overflow-hidden rounded-t-lg">
-        <img
+        <Image
           onClick={() =>
             document.getElementById(`modal_${item.id}`).showModal()
           }
@@ -35,15 +37,7 @@ const Card = ({ item }) => {
             </div>
 
             <p className="py-4">{item.description}</p>
-            <div>
-              <img
-                className="h-32 w-48 rounded-full mx-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
-                src={item.imageUrl}
-                alt={item.title}
-                width={400}
-                height={400}
-              />
-            </div>
+            <ModalImg item={item} />
             <div className="p-4">
               <h1 className="text-lg font-bold text-gray-800">
                 Title: {item.title}
@@ -54,12 +48,13 @@ const Card = ({ item }) => {
               <p className="text-md text-gray-900 font-semibold mt-1">
                 Price: ${item.price}
               </p>
-              <AddToCartBtn />
+              <AddToCartBtn item={item} />
             </div>
           </div>
         </dialog>
         {/* modal end */}
       </div>
+
       <div className="p-4">
         <h1 className="text-lg font-bold text-gray-800">Title: {item.title}</h1>
         <h2 className="text-sm text-gray-600">Category: {item.category}</h2>

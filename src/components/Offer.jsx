@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
 import "../components/Css/Offer.css";
+import Container from "./Container";
 
 const Offer = () => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const Offer = () => {
   }, []);
 
   return (
-    <div>
+    <Container>
       <SectionTitle
         title={"Exciting Offers for Our Customers!"}
         subtitle={"Don't miss out on our special deals and delicious meals!"}
@@ -62,9 +63,6 @@ const Offer = () => {
               special price!
             </p>
           </figcaption>
-          <a href="#" className="mt-2 text-blue-500 hover:underline">
-            Learn More
-          </a>
         </figure>
         <figure
           data-aos="fade-up" // AOS animation attribute
@@ -80,7 +78,7 @@ const Offer = () => {
           </figcaption>
         </figure>
       </div>
-    </div>
+    </Container>
   );
 };
 
